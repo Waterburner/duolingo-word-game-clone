@@ -1,5 +1,5 @@
 .words {
-  @apply flex flex-col p-8 border border-solid border-dark rounded-2xl w-[350px] max-w-full;
+  @apply flex flex-col p-8 border border-solid border-dark rounded-2xl max-w-[350px] w-full;
 }
 
 .destination {
