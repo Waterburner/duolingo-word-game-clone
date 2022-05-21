@@ -1,0 +1,43 @@
+.words {
+  @apply flex flex-col p-8 border border-solid border-dark rounded-2xl w-[350px] max-w-full;
+}
+
+.destination {
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 44px,
+    #263032 44px,
+    #263032 45px,
+    transparent 45px,
+    transparent 48px
+  );
+  @apply flex flex-row flex-wrap items-start content-start mb-16 min-h-[100px];
+}
+.destination .word {
+  @apply mx-1 mb-2 mt-0;
+}
+
+.origin {
+  @apply flex flex-wrap justify-center items-center max-w-[275px] mx-auto;
+}
+
+.container {
+  background: #596265;
+  @apply w-fit box-content bg-dark pb-[.125rem] rounded-lg mx-1 mb-1 justify-start flex flex-col duration-300 ease-in;
+}
+.container:empty {
+  @apply bg-secondary;
+}
+
+.word {
+  all: unset;
+  @apply box-border border border-solid border-dark rounded-lg cursor-pointer font-bold  select-none text-inherit p-2 appearance-none bg-primary
+    active:duration-300 active:ease-in active:transform active:scale-105 active:-translate-y-1
+    hover:duration-300 hover:ease-in hover:transform hover:scale-100 hover:-translate-y-1;
+}
+
+.word:active,
+.word:focus {
+  @apply bg-focus;
+}

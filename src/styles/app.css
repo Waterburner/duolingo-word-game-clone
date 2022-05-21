@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+html {
+  @apply flex text-white min-h-screen w-screen text-base box-border font-openSans justify-center items-center;
+}
+html * {
+  box-sizing: inherit;
+}
+
+body {
+  @apply flex flex-col px-4 py-12 items-center justify-start m-0 bg-primary;
+}
